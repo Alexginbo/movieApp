@@ -11,7 +11,7 @@
   </ion-searchbar>
   <ion-list>
  
-    <ion-item button *ngFor="let item of (results | async)" [routerLink]="['/', 'movies', item.imdbID]">
+    <ion-item button *ngFor="let item of (results | async)" [routerLink]="['/', 'movie-details', item.imdbID]">
       <ion-avatar slot="start">
         <img [src]="item.Poster" *ngIf="item.Poster != 'N/A'">
       </ion-avatar>
